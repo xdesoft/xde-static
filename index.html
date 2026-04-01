@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>同花顺跳转</title>
+	</head>
+	<body>
+		<script>
+			const code = new URLSearchParams(window.location.search).get('code') || '600519';
+			location.href = `https://m.10jqka.com.cn/stockpage/hs_${code}.html`;
+		</script>
+	</body>
+</html>
